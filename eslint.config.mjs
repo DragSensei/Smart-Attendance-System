@@ -57,9 +57,9 @@ export default [
               ],
             },
             {
-              // App can import from both shared and any feature
+              // App can import from app, shared, and any feature
               from: ["app"],
-              allow: ["shared", "feature"],
+              allow: ["app", "shared", "feature"],
             },
           ],
         },
@@ -75,6 +75,6 @@ export default [
     },
   },
   {
-    ignores: ["node_modules/**", "dist/**"],
+    ignores: ["node_modules/**", "dist/**", ".next/**", "next-env.d.ts"],
   },
 ];

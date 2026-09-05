@@ -2,6 +2,16 @@
 
 This project implements a **Feature-Based Folder Structure**, categorizing code by the specific function or feature it serves rather than generic file types. This ensures high modularity, easy refactoring, testability, and clean dependency boundaries.
 
+## Tech Stack
+
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **UI & Runtime**: [React 19](https://react.dev/) & [Node.js](https://nodejs.org/)
+- **Styling & Components**: [Tailwind CSS](https://tailwindcss.com/) & [shadcn/ui](https://ui.shadcn.com/) (located in `src/shared/components/ui/`)
+- **Animation**: [Motion Dev](https://motion.dev/) (`motion/react`)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Architecture Enforcement**: [`eslint-plugin-boundaries`](https://github.com/javierbrea/eslint-plugin-boundaries)
+
 ---
 
 ## The Core Architecture (One-Way Data Flow)
