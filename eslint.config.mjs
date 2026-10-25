@@ -3,6 +3,18 @@ import tsPlugin from "typescript-eslint";
 import boundaries from "eslint-plugin-boundaries";
 
 export default [
+  {
+    ignores: [
+      "node_modules/**",
+      "dist/**",
+      ".next/**",
+      "next-env.d.ts",
+      ".agents/**",
+      ".agent/**",
+      ".specify/**",
+      "**/*.mjs",
+    ],
+  },
   js.configs.recommended,
   ...tsPlugin.configs.recommended,
   {
@@ -73,8 +85,5 @@ export default [
         },
       ],
     },
-  },
-  {
-    ignores: ["node_modules/**", "dist/**", ".next/**", "next-env.d.ts"],
   },
 ];
